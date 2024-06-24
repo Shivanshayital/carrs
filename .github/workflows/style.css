@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0 2em;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+#search {
+    background-color: #f2f2f2;
+    padding: 2em 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+#search form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#search label {
+    flex-basis: 20%;
+    margin-right: 1%;
+}
+
+#search select,
+#search button {
+    flex-basis: 79%;
+    padding: 0.5em;
+    margin-right: 1%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#search button {
+    background-color: #333;
+    color: white;
+}
+
+#listings {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#listings li {
+    flex-basis: calc(33.333% - 2em);
+    margin-bottom: 2em;
+    background-color: #f2f2f2;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#listings li:hover {
+    transform: translateY(-5px);
+}
+
+#listings img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+#listings h3 {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+#listings p {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+#listings button {
+    background-color: #333;
+    color: white;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+
+    #listings li {
+        flex-basis: calc(50% - 2em);
+    }
+
+}
+@media screen and (max-width: 480px) {
+    #listings li {
+        flex-basis: 100%;
+    }
+    body {
+        background-image: url('wallpaperflare.com_wallpaper (1).jpg'); /* Replace 'car_background.jpg' with the path to your car image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .salu{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+    .shiv{
+        text-align: center;
+        color: rgb(210, 199, 199);
+        font-weight: bold;
+    }
+}
